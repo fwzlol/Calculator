@@ -1,0 +1,168 @@
+body{
+    font-family: Verdana;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#calculator-holder {
+    background-color: rgb(68, 68, 68);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+    border-radius:
+        max( 46px,
+            min(
+                min(8vw, calc(8vh * 2 / 3)) - 10px,
+                min(8vh, calc(8vw * 3 / 2)) - 10px
+            )
+        );
+
+    min-width: 400px;
+    min-height: 600px;
+    width: min(70vw, calc(70vh * 2 / 3));
+    height: min(70vh, calc(70vw * 3 / 2));
+}
+#output {
+    background-color: rgba(0, 0, 0, 0.37);
+    display: grid;
+    border-radius:
+        max( 36px,
+            min(
+                min(8vw, calc(8vh * 2 / 3)) - 10px,
+                min(8vh, calc(8vw * 3 / 2)) - 10px
+            )
+        );
+
+    margin: 10px;
+    align-items: center;
+    justify-items: right;
+}
+#result {
+    margin:5%;
+    color:white;
+    font-size:
+        max( 57px,
+            min(10vw,calc(10vh * 2/3))
+        );
+}
+#input {
+    background-color: rgba(255, 255, 255, 0);
+    display: grid;
+    border-bottom-left-radius:
+        max( 29px,
+            min(
+                min(8vw, calc(8vh * 2 / 3)) - 10px,
+                min(8vh, calc(8vw * 3 / 2)) - 10px
+                )
+                );
+    border-bottom-right-radius:
+        max( 29px,
+            min(
+                min(8vw, calc(8vh * 2 / 3)) - 10px,
+                min(8vh, calc(8vw * 3 / 2)) - 10px
+                )
+                );
+    margin:10px;
+    padding:10px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "but0 but0 but0 but1"
+    "but2 but3 but4 but5"
+    "but6 but7 but8 but9"
+    "but10 but11 but12 but13"
+    "but14 but14 but15 but16";
+}
+button{
+    border-radius: calc( min( min(5vw, calc(5vh * 2 / 3)), min(5vh, calc(5vw * 3 / 2))) );
+    
+    border-radius:
+        max( 36px,
+            min(
+                min(5vw, calc(5vh * 2 / 3)),
+                min(5vh, calc(5vw * 3 / 2))
+            )
+        );
+
+    font-size:
+        max( 40px,
+            min(7vw,calc(7vh * 2/3))
+        );
+
+    justify-items: center;
+    align-items: center;
+    color:white;
+    border:none;
+    border-radius:100vw;
+    cursor: pointer;
+    background-color: rgb(126, 124, 118);
+}
+button:hover {
+    filter:brightness(0.6);
+    transition: filter 0.5s ease;
+}
+button:active {
+    filter:brightness(1.4);
+    transition: none;
+}
+button:not(:active) {
+    transition: filter 0.3s ease; /* Smooth transition back to normal */
+  }
+.numberB {
+    background-color: rgb(126, 124, 118);
+    /**/
+}
+.operatorB {
+    background-color: rgb(189, 110, 49);
+}
+button:nth-child(1) {
+    grid-area: but0;
+}
+button:nth-child(2) {
+    grid-area: but1;
+}
+button:nth-child(3) {
+    grid-area: but2;
+}
+button:nth-child(4) {
+    grid-area: but3;
+}
+button:nth-child(5) {
+    grid-area: but4;
+}
+button:nth-child(6) {
+    grid-area: but5;
+}
+button:nth-child(7) {
+    grid-area: but6;
+}
+button:nth-child(8) {
+    grid-area: but7;
+}
+button:nth-child(9) {
+    grid-area: but8;
+}
+button:nth-child(10) {
+    grid-area: but9;
+}
+button:nth-child(11) {
+    grid-area: but10;
+}
+button:nth-child(12) {
+    grid-area: but11;
+}
+button:nth-child(13) {
+    grid-area: but12;
+}
+button:nth-child(14) {
+    grid-area: but13;
+}
+button:nth-child(15) {
+    grid-area: but14;
+}
+button:nth-child(16) {
+    grid-area: but15;
+}
+button:nth-child(17) {
+    grid-area: but16;
+}
